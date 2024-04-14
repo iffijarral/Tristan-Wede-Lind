@@ -1,0 +1,69 @@
+@import url('styles.css');
+
+fieldset {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+@media screen and (min-width: 800px) {    
+    fieldset > div:not(:nth-last-child(2)) {
+        display: flex;
+        gap: 1rem;
+        padding-bottom: .5rem;
+    }
+    
+    label {    
+        width: 8rem;    
+    }
+}
+textarea {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 1rem;
+    padding: 0.5rem;
+}
+
+input[type='submit'] {
+    width: fit-content;
+    padding: 0.3rem 0.5rem;
+    height: auto;    
+}
+#contact {
+    display: grid;   
+    gap: 1rem; 
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "image"
+        "address"
+        "form"
+    ;
+}
+#contact address {
+    grid-area: address;
+}
+#contact form {
+    grid-area: form;
+}
+#contact img {
+    grid-area: image;
+    justify-self: end;
+    border: 1px solid var(--colorBgSecondary);
+    padding: .3rem;
+    width: 100%;
+    
+}
+
+@media screen and (min-width: 800px) {
+    #contact {
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "address  image"
+        "form image";
+    }
+    #contact img {
+        height: 80%;
+    }
+}

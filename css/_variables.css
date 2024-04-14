@@ -1,0 +1,12 @@
+:root {     
+    --colorNone: transparent;
+    --colorBgPrimary: #262858;
+    --colorBgSecondary: #516283;
+    --colorBgButton: #582627;
+    --colorAccent: #d6c37e;
+    --colorAccentLight: #fffaf0;    
+    --colorTextAccent: floralwhite;    
+    --fontSizePrimary: 0.9rem;
+    --fontSizeSecondary: 1rem;
+    --fontDefault: verdana, Arial, sans-serif;
+}

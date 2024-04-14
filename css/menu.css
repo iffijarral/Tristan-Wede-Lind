@@ -1,0 +1,43 @@
+@import url('styles.css');
+
+#menu {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+@media screen and (min-width: 1185px) {    
+    #menu {
+        flex-direction: row;                
+        flex-wrap: wrap;
+    }
+    #menu article {        
+        flex: 1 1 calc(50% - 1rem); 
+        font-size: var(--fontSizePrimary);                     
+    }
+   
+}
+#menu article {
+    padding: .5rem 1rem;
+    background-color: var(--colorBgMenuCard);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column-reverse;
+    border-radius: 1rem;
+    
+}
+@media screen and (min-width: 768px) {    
+    #menu article {
+        flex-direction: row;        
+    }
+}
+#menu article input[type='button'] {
+    width: fit-content;
+    background-color: var(--colorBgPrimary);
+    color: var(--colorTextPrimary);
+    border: 3px solid var(--colorBgSecondary);
+    border-radius: .5rem;
+    margin-top: .5rem;    
+    padding: 0 1rem;
+}
+
+
